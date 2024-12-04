@@ -62,6 +62,11 @@ const CreatePost = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!title.trim() || !description.trim()) {
+      alert("no puede crear una publicación vacia.");
+      return; }
+
     try {
       await addDoc(collection(db, 'posts'), {
         title,
