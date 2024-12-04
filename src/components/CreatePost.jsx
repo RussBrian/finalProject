@@ -9,6 +9,7 @@ import '../css/createpost.css';
 const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [userName, setUserName] = useState("");
   const [userFirstName, setUserFirstName] = useState("");
   const [userLastName, setUserLastName] = useState("");
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ const CreatePost = () => {
               querySnapshot2.forEach((doc) => {
                 setUserFirstName(doc.data().firstName);
                 setUserLastName(doc.data().lastName);
+                setUserName(`${doc.data().firstName} ${doc.data().lastName}`);
               });
             } else {
               alert("Usuario no encontrado por email");
@@ -38,6 +40,7 @@ const CreatePost = () => {
             querySnapshot1.forEach((doc) => {
               setUserFirstName(doc.data().firstName);
               setUserLastName(doc.data().lastName);
+              setUserName(`${doc.data().firstName} ${doc.data().lastName}`);
             });
           }
         } catch (error) {
@@ -70,7 +73,7 @@ const CreatePost = () => {
         description,
         userName,
         userFirstName,
-        userLastName
+        userLastName,
       });
       alert("Publicación creada con éxito");
       setTitle(""); 
@@ -83,10 +86,9 @@ const CreatePost = () => {
   return (
     <div className="create-post-container">
       <div className="create-post-form">
-      <h2 className="create-post-title">
-        Crea una publicación - {userFirstName && userLastName ? `${userFirstName} ${userLastName}` : 'Usuario no encontrado'}
-      </h2>
-
+        <h2 className="create-post-title">
+          Crea una publicación - {userName && <span>{userName}</span>}
+        </h2>
         <form onSubmit={handleSubmit}>
           <input
             className="create-post-input"

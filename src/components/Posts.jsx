@@ -45,7 +45,7 @@ const Posts = () => {
                   <h3>{post.title}</h3>
                   <p>{post.description}</p>
                   <p className="post-author">
-                    Por: {post.userName} {post.userLastName}
+                    Por: {post.userName}
                   </p>
                 </div>
               </div>
