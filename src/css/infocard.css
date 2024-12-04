@@ -1,0 +1,80 @@
+.user-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.user-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+}
+
+.user-card-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-card-details h3 {
+  color: #333;
+}
+
+.user-card-details p {
+  font-size: 14px;
+  color: #5f3d16;
+}
+
+.user-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.redirect-card,
+.logout-button {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+   font-size: 12px;
+}
+
+.redirect-card {
+  background-color: #8c6f36;
+  color: #fff;
+  cursor: pointer;
+}
+
+.redirect-card:hover {
+  background-color: #704e2a;
+  transform: scale(1.05);
+}
+
+.logout-button {
+  background-color: #8c6f36;
+  color: #fff;
+  border: none;
+  font-size: 12;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #704e2a;
+  transform: scale(1.05);
+}
+
