@@ -4,7 +4,13 @@
 
 Abrir la terminal una vez clonado el proyecto y proceder con las siguientes acciones:
 
-### 1. Se debe ejecutar el siguiente comando para iniciar la app.
+### 1. Se debe ejecutar el siguiente comando para instalar los paquetes de node.
+
+```
+npm install
+```
+
+### 2. Se debe ejecutar el siguiente comando para iniciar la app.
 
 ```
 npm run dev
