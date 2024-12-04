@@ -15,6 +15,13 @@ npm install
 ```
 npm run dev
 ```
+# FireBase
+
+## Authentication
+![imagen](https://github.com/user-attachments/assets/ec4f2f22-6393-4bc6-8b28-166ce51bd649)
+
+## Database Storage
+![imagen](https://github.com/user-attachments/assets/8d36eec3-dc65-4c47-bf25-2845b2a3093f)
 
 # Evidencias del proyecto
 
