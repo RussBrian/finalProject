@@ -12,7 +12,7 @@ npm run dev
 
 # Evidencias del proyecto
 
-##Flujo sin usuario
+## Flujo sin usuario
 
 ### Pantalla de inicio
 ![imagen](https://github.com/user-attachments/assets/80488c2c-186f-4762-8aa3-19405d582d3d)
@@ -23,7 +23,7 @@ npm run dev
 ### Pantalla de registro
 ![imagen](https://github.com/user-attachments/assets/d779fd19-1da4-45d1-a10c-87d3ddab6843)
 
-##Flujo con usuario registrado
+## Flujo con usuario registrado
 
 ![imagen](https://github.com/user-attachments/assets/4ccef37b-48ec-4ae6-8863-dc4d6a0c7b9d)
 
