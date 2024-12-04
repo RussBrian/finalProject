@@ -67,11 +67,13 @@ const CreatePost = () => {
         title,
         description,
         userName,
-        userFirstName,   
-        userLastName,   
+        userFirstName,
+        userLastName,
         createdAt: new Date(),
       });
-      navigate('/');
+      alert("Publicación creada con éxito");
+      setTitle(""); 
+      setDescription("");
     } catch (error) {
       alert("Error al crear la publicación:", error);
     }

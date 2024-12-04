@@ -29,7 +29,7 @@
 
         navigate('/create-post');
         } catch (error) {
-        console.error('Error al registrar:', error);
+        alert('Error al registrarse:', error);
         }
     };
 
